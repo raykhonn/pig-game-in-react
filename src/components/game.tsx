@@ -22,7 +22,7 @@ export default class GameComponent extends Component<any, any> {
 	}
 
 	handleDice = () => {
-		const dices = [dice1, , dice2, dice3, dice4, dice5, dice6];
+		const dices = [dice1,  dice2, dice3, dice4, dice5, dice6];
 		const rand = Math.floor(Math.random() * dices.length);
 		const selectedDice = dices[rand];
 		this.state.currentPlayer === 1
