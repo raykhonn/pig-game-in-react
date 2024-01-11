@@ -104,7 +104,7 @@ export default class GameComponent extends Component<any, any> {
 							</div>
 						</div>
 					</div>
-					<div className={`main-left players  ${currentPlayer == 1 ? activClass : ''}`}>
+					<div className={`main-left players  ${currentPlayer === 1 ? activClass : ''}`}>
 						<div>
 							<div className="player-name">Player 1</div>
 							<div className="player-score">{player1Score}</div>
@@ -114,7 +114,7 @@ export default class GameComponent extends Component<any, any> {
 							<div className="point">{player1Point}</div>
 						</div>
 					</div>
-					<div className={`main-right players ${currentPlayer == 2 ? activClass : ''}`}>
+					<div className={`main-right players ${currentPlayer === 2 ? activClass : ''}`}>
 						<div>
 							<div className="player-name">Player 2</div>
 							<div className="player-score">{player2Score}</div>
